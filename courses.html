@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Courses — Virtual Clinical Training | Live online dental sessions</title>
+  <meta name="description" content="Browse Virtual Clinical Training's clinical sessions — live, interactive dental training via Google Meet. See sessions open for registration now and past sessions. Recordings included for registered participants.">
+  <link rel="canonical" href="https://virtualclinicaltraining.example/courses.html">
+  <link rel="icon" href="images/brand-logo.png" type="image/png">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Courses — Virtual Clinical Training">
+  <meta property="og:description" content="Live, interactive clinical dental sessions via Google Meet. See what's open for registration now.">
+  <meta property="og:image" content="https://virtualclinicaltraining.example/images/brand-logo.png">
+  <meta property="og:url" content="https://virtualclinicaltraining.example/courses.html">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Structured data: CollectionPage + Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "EducationalOrganization",
+        "@id": "https://virtualclinicaltraining.example/#org",
+        "name": "Virtual Clinical Training",
+        "url": "https://virtualclinicaltraining.example/",
+        "email": "virtualclinicaltraining@gmail.com",
+        "sameAs": ["https://www.instagram.com/vct.my/"]
+      },
+      {
+        "@type": "CollectionPage",
+        "url": "https://virtualclinicaltraining.example/courses.html",
+        "name": "Courses — Virtual Clinical Training",
+        "about": { "@id": "https://virtualclinicaltraining.example/#org" }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Structured data: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "How do I join a session?", "acceptedAnswer": { "@type": "Answer", "text": "After you register and your payment is confirmed, you'll receive a Google Meet link by email. Join at the scheduled time using your Google account." } },
+      { "@type": "Question", "name": "Will I receive a recording?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. A full recording is shared via Google Drive with all registered participants after the session." } },
+      { "@type": "Question", "name": "Why is a Google account required?", "acceptedAnswer": { "@type": "Answer", "text": "Sessions run on Google Meet and recordings are shared via Google Drive, so a Google (Gmail) account is required to join and access materials. Registration is limited to Gmail accounts." } },
+      { "@type": "Question", "name": "What payment methods are accepted?", "acceptedAnswer": { "@type": "Answer", "text": "Payment details are provided on each course page and after registration. (Accepted methods to be confirmed.)" } },
+      { "@type": "Question", "name": "Can I get a refund if I can't attend?", "acceptedAnswer": { "@type": "Answer", "text": "Even if you can't attend live, you'll still receive the recording. Refund terms are noted on each course page. (Refund policy to be confirmed.)" } }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ============================ HEADER ============================ -->
+  <header class="site-header at-top" id="header">
+    <div class="container">
+      <a href="index.html" class="logo" aria-label="Virtual Clinical Training home">
+        <img src="images/brand-logo.png" alt="Virtual Clinical Training (V.C.T.)" class="logo-img" width="48" height="48">
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="courses.html" aria-current="page">Courses</a>
+        <a href="instructors.html">Instructors</a>
+        <a href="about.html">About</a>
+      </nav>
+      <div class="header-actions">
+        <a href="https://www.instagram.com/vct.my/" target="_blank" rel="noopener" class="icon-btn desktop-only" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="courses.html" class="btn btn-primary btn-sm">Explore courses</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile nav drawer -->
+  <div class="mobile-nav" id="mobileNav">
+    <div class="mobile-nav-head">
+      <span class="logo"><img src="images/brand-logo.png" alt="Virtual Clinical Training (V.C.T.)" class="logo-img" width="44" height="44"></span>
+      <button class="icon-btn" id="mobileClose" aria-label="Close menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
+      </button>
+    </div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="instructors.html">Instructors</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+    <a href="courses.html" class="btn btn-primary">Explore courses</a>
+    <div class="mobile-nav-social">
+      <a href="https://www.instagram.com/vct.my/" target="_blank" rel="noopener" class="icon-btn" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <main>
+    <!-- ==================== PAGE HERO ==================== -->
+    <section class="page-hero page-hero-sm">
+      <!-- TEMP: placeholder image borrowed from the top page — replace with a dedicated Courses hero later -->
+      <div class="page-hero-bg" style="background-image:url('images/01%20Top-page/hero-2.png')"></div>
+      <div class="page-hero-overlay"></div>
+      <div class="hero-shape s1"></div>
+      <div class="hero-shape s2"></div>
+      <div class="container">
+        <p class="eyebrow reveal">Courses</p>
+        <h1 class="reveal">Browse our clinical sessions</h1>
+        <p class="lead reveal">Live, interactive clinical training via Google Meet. Every session includes a recording for all registered participants — so you can revisit the material anytime.</p>
+      </div>
+    </section>
+
+    <!-- ==================== FILTER + SEARCH ==================== -->
+    <!--
+      OPERATOR NOTE — moving a course between sections:
+      Each course card carries data-status="open" (accepting registration) or
+      data-status="closed" (registration closed). For now, to move a course:
+        1) cut the whole <a class="course-card"> block
+        2) paste it into the other section's .course-cards grid
+        3) update its badge (e.g. Registering → Sold out / Completed)
+      (Future: a single status field could auto-sort cards into the right section.)
+    -->
+    <section class="section">
+      <div class="container">
+        <div class="course-filter reveal">
+          <div class="search-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+            <input type="search" id="courseSearch" placeholder="Search by course, instructor, or keyword…" aria-label="Search courses">
+          </div>
+          <div class="tag-filter" role="group" aria-label="Filter by specialty">
+            <button class="tag-chip active" data-tag="all">All</button>
+            <button class="tag-chip" data-tag="periodontics">Periodontics</button>
+            <button class="tag-chip" data-tag="implant">Implant Dentistry</button>
+            <button class="tag-chip" data-tag="endodontics">Endodontics</button>
+            <button class="tag-chip" data-tag="prosthodontics">Prosthodontics</button>
+            <button class="tag-chip" data-tag="oral-surgery">Oral Surgery</button>
+            <button class="tag-chip" data-tag="orthodontics">Orthodontics</button>
+            <button class="tag-chip" data-tag="paediatric">Paediatric</button>
+            <button class="tag-chip" data-tag="restorative">Restorative</button>
+          </div>
+        </div>
+
+        <p class="no-results" id="noResults">No sessions match your search. Try a different keyword or specialty.</p>
+
+        <!-- ===== OPEN: registration available ===== -->
+        <div class="course-section" data-section="open">
+          <div class="section-head reveal">
+            <p class="eyebrow">Open for registration</p>
+            <h2 class="section-title">You can still join these</h2>
+            <p class="section-intro">Sessions accepting participants now — whether they haven't started yet, are already running, or are available on-demand.</p>
+          </div>
+
+          <div class="course-cards">
+            <!-- OPEN · not started yet (real) -->
+            <a href="course-subgingival-debridement.html" class="course-card reveal" data-status="open" data-tags="periodontics,non-surgical">
+              <div class="course-thumb">
+                <img src="images/03%20Courses/ID260725-thumbnail.png" alt="Subgingival debridement — periodontal treatment close-up" loading="lazy">
+                <span class="thumb-date">30 Jul 2026 · Wed</span>
+                <span class="badge badge-green thumb-badge"><span class="dot"></span> Registering</span>
+              </div>
+              <div class="course-card-body">
+                <h3>Subgingival Debridement: Beyond Deep Scaling</h3>
+                <div class="card-instructor">
+                  <div class="avatar">YS</div>
+                  <div><div class="name">Dr. Yeong Shue Kang</div><div class="cred">Periodontics · Non-surgical therapy</div></div>
+                </div>
+                <div class="card-tags"><span class="tag">Periodontics</span><span class="tag">Non-surgical therapy</span></div>
+                <div class="card-meta"><span>8:30–10:30 PM MYT · Google Meet</span></div>
+                <span class="card-cta">View details &amp; register →</span>
+              </div>
+            </a>
+
+            <!-- OPEN · in progress (example placeholder) -->
+            <a href="#" class="course-card reveal d1" data-status="open" data-tags="implant,oral-surgery">
+              <div class="course-thumb placeholder">
+                <span class="thumb-label">Implant Dentistry</span>
+                <span class="thumb-date">Example · in progress</span>
+                <span class="badge badge-amber thumb-badge">In progress</span>
+              </div>
+              <div class="course-card-body">
+                <h3>Implant Complications &amp; Management</h3>
+                <div class="card-instructor">
+                  <div class="avatar">VCT</div>
+                  <div><div class="name">Instructor to be announced</div><div class="cred">Implant Dentistry</div></div>
+                </div>
+                <div class="card-tags"><span class="tag">Implant Dentistry</span><span class="tag">Oral Surgery</span></div>
+                <div class="card-meta"><span>Multi-session series · join ongoing</span></div>
+                <span class="card-cta">Join now →</span>
+              </div>
+            </a>
+
+            <!-- OPEN · finished but available on-demand (example placeholder) -->
+            <a href="#" class="course-card reveal d2" data-status="open" data-tags="restorative">
+              <div class="course-thumb placeholder">
+                <span class="thumb-label">Restorative</span>
+                <span class="thumb-date">Example · on-demand</span>
+                <span class="badge badge-blue thumb-badge">On-demand</span>
+              </div>
+              <div class="course-card-body">
+                <h3>Restorative &amp; Aesthetic Dentistry</h3>
+                <div class="card-instructor">
+                  <div class="avatar">VCT</div>
+                  <div><div class="name">Instructor to be announced</div><div class="cred">Restorative &amp; Aesthetic</div></div>
+                </div>
+                <div class="card-tags"><span class="tag">Restorative &amp; Aesthetic</span></div>
+                <div class="card-meta"><span>Session ended · recording available</span></div>
+                <span class="card-cta">Get the recording →</span>
+              </div>
+            </a>
+          </div>
+
+          <!-- Notify band -->
+          <div class="notify-band reveal">
+            <div>
+              <strong>More sessions are in planning.</strong>
+              <span>New topics and speakers across multiple specialties are on the way.</span>
+            </div>
+            <div class="notify-actions">
+              <a href="https://www.instagram.com/vct.my/" target="_blank" rel="noopener" class="btn btn-ghost-dark btn-sm">Follow @vct.my</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CLOSED: registration not available ===== -->
+    <section class="section alt">
+      <div class="container">
+        <div class="course-section" data-section="closed">
+          <div class="section-head reveal">
+            <p class="eyebrow">Registration closed</p>
+            <h2 class="section-title">No longer accepting participants</h2>
+            <p class="section-intro">Sessions that have finished, or that filled up before the start date. Recordings remain available to those who registered.</p>
+          </div>
+
+          <div class="course-cards">
+            <!-- CLOSED · sold out, not yet held (example placeholder) -->
+            <a href="#" class="course-card is-closed reveal" data-status="closed" data-tags="endodontics">
+              <div class="course-thumb placeholder">
+                <span class="thumb-label">Endodontics</span>
+                <span class="thumb-date">Example · upcoming</span>
+                <span class="badge badge-red thumb-badge">Sold out</span>
+              </div>
+              <div class="course-card-body">
+                <h3>Endodontics in Daily Practice</h3>
+                <div class="card-instructor">
+                  <div class="avatar">VCT</div>
+                  <div><div class="name">Instructor to be announced</div><div class="cred">Endodontics</div></div>
+                </div>
+                <div class="card-tags"><span class="tag">Endodontics</span></div>
+                <div class="card-meta"><span>Fully booked — registration closed</span></div>
+                <span class="card-cta muted-cta">Registration closed</span>
+              </div>
+            </a>
+
+            <!-- CLOSED · completed (example placeholder) -->
+            <a href="#" class="course-card is-closed reveal d1" data-status="closed" data-tags="orthodontics">
+              <div class="course-thumb placeholder">
+                <span class="thumb-label">Orthodontics</span>
+                <span class="thumb-date">Example · completed</span>
+                <span class="badge badge-grey thumb-badge">Completed</span>
+              </div>
+              <div class="course-card-body">
+                <h3>Orthodontics &amp; Clear Aligner Basics</h3>
+                <div class="card-instructor">
+                  <div class="avatar">VCT</div>
+                  <div><div class="name">Instructor to be announced</div><div class="cred">Orthodontics</div></div>
+                </div>
+                <div class="card-tags"><span class="tag">Orthodontics &amp; Clear Aligner</span></div>
+                <div class="card-meta"><span>Recording available to participants</span></div>
+                <span class="card-cta muted-cta">Registration closed</span>
+              </div>
+            </a>
+          </div>
+          <p class="spotlight-more">Cards above are placeholders — real sessions will appear here once registration closes.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FAQ (common) ==================== -->
+    <section class="section faq">
+      <div class="container container-narrow">
+        <div class="section-head reveal" style="text-align:center;margin-left:auto;margin-right:auto">
+          <p class="eyebrow">FAQ</p>
+          <h2 class="section-title">Common questions</h2>
+        </div>
+        <div class="faq-list reveal">
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>How do I join a session?</span><svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
+            <div class="faq-a"><p>After you register and your payment is confirmed, you'll receive a Google Meet link by email. Join at the scheduled time using your Google account.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>Will I receive a recording?</span><svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
+            <div class="faq-a"><p>Yes. A full recording is shared via Google Drive with all registered participants after the session.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>Why is a Google account required?</span><svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
+            <div class="faq-a"><p>Sessions run on Google Meet and recordings are shared via Google Drive, so a Google (Gmail) account is required to join and access materials. Registration is limited to Gmail accounts.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>What payment methods are accepted?</span><svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
+            <div class="faq-a"><p>Payment details are provided on each course page and after registration. <em>(Accepted methods to be confirmed.)</em></p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>Can I get a refund if I can't attend?</span><svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
+            <div class="faq-a"><p>Even if you can't attend live, you'll still receive the recording. Refund terms are noted on each course page. <em>(Refund policy to be confirmed.)</em></p></div>
+          </div>
+        </div>
+        <p class="faq-terms">Full terms apply to all sessions. <a href="terms.html">Read our terms of service →</a></p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================ FOOTER ============================ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <img src="images/brand-logo.png" alt="Virtual Clinical Training (V.C.T.)" class="logo-img footer-logo-img" width="72" height="72">
+          </a>
+          <p>A hub for continuous clinical learning. Live, interactive dental education via Google Meet — based in Kuala Lumpur, Malaysia.</p>
+        </div>
+        <div>
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="instructors.html">Instructors</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="https://www.instagram.com/vct.my/" target="_blank" rel="noopener">Instagram @vct.my</a></li>
+            <li><a href="mailto:virtualclinicaltraining@gmail.com">Email us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="privacy.html">Privacy policy</a></li>
+            <li><a href="terms.html">Terms of service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Virtual Clinical Training. All rights reserved.</span>
+        <span>Kuala Lumpur, Malaysia</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================ SCRIPTS ============================ -->
+  <script>
+    const header = document.getElementById('header');
+    const onScroll = () => {
+      if (window.scrollY > 50) { header.classList.remove('at-top'); header.classList.add('scrolled'); }
+      else { header.classList.add('at-top'); header.classList.remove('scrolled'); }
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+
+    const mobileNav = document.getElementById('mobileNav');
+    document.getElementById('hamburger').addEventListener('click', () => mobileNav.classList.add('open'));
+    document.getElementById('mobileClose').addEventListener('click', () => mobileNav.classList.remove('open'));
+    mobileNav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mobileNav.classList.remove('open')));
+
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+    document.querySelectorAll('.faq-q').forEach(q => {
+      q.addEventListener('click', () => {
+        const item = q.parentElement, answer = item.querySelector('.faq-a');
+        const isOpen = item.classList.toggle('open');
+        q.setAttribute('aria-expanded', isOpen);
+        answer.style.maxHeight = isOpen ? answer.scrollHeight + 'px' : null;
+      });
+    });
+
+    // Course search + tag filter (matches course name, instructor, description, tags)
+    (function(){
+      const search = document.getElementById('courseSearch');
+      const chips = document.querySelectorAll('.tag-chip');
+      const cards = document.querySelectorAll('.course-card');
+      const sections = document.querySelectorAll('.course-section');
+      const noResults = document.getElementById('noResults');
+      let activeTag = 'all';
+
+      function apply(){
+        const q = (search.value || '').trim().toLowerCase();
+        let anyVisible = false;
+        cards.forEach(card => {
+          const tags = (card.dataset.tags || '').split(',');
+          const text = (card.textContent + ' ' + (card.dataset.tags || '')).toLowerCase();
+          const tagOk = activeTag === 'all' || tags.includes(activeTag);
+          const qOk = q === '' || text.includes(q);
+          const show = tagOk && qOk;
+          card.classList.toggle('hidden', !show);
+          if (show) anyVisible = true;
+        });
+        sections.forEach(sec => {
+          const visible = sec.querySelectorAll('.course-card:not(.hidden)').length;
+          sec.classList.toggle('hide', visible === 0);
+        });
+        noResults.classList.toggle('show', !anyVisible);
+      }
+
+      chips.forEach(c => c.addEventListener('click', () => {
+        chips.forEach(x => x.classList.remove('active'));
+        c.classList.add('active');
+        activeTag = c.dataset.tag;
+        apply();
+      }));
+      search.addEventListener('input', apply);
+
+      // Pre-fill search from ?q= (e.g. arriving from an instructor's "Find courses")
+      const preset = new URLSearchParams(location.search).get('q');
+      if (preset) { search.value = preset; }
+      apply();
+    })();
+  </script>
+</body>
+</html>

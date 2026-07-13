@@ -339,6 +339,79 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .course-card .card-cta { margin-top: auto; font-weight: 600; color: var(--blue-600); font-size: .9rem; }
 .course-card.is-soon { border-style: dashed; background: var(--gray-50); box-shadow: none; }
 .course-card.is-soon:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
+
+/* ---- Course cards: close-up zoom + hover reveal (homepage + courses list) ---- */
+/* Compact by default (thumbnail + title + instructor). On hover the whole card
+   zooms out from its centre in every direction and a details panel floats in —
+   without pushing the neighbouring cards, because the panel is taken out of flow. */
+.course-cards { align-items: start; }
+.course-cards .course-card .card-instructor { margin-bottom: 0; }
+.course-cards .course-card .fc-reveal { display: flex; flex-direction: column; }
+.course-cards .course-card .card-tags { margin: 0 0 12px; }
+.course-cards .course-card .card-cta { margin-top: 4px; }
+
+@media (hover: hover) and (pointer: fine) {
+  /* allow the floating panel and zoom to spill outside the compact footprint */
+  .course-cards .course-card {
+    position: relative; overflow: visible;
+    transition: transform .16s var(--ease), box-shadow .16s var(--ease),
+                border-color .16s var(--ease), border-radius .16s var(--ease);
+  }
+  .course-cards .course-card .course-thumb { border-radius: var(--radius) var(--radius) 0 0; }
+
+  /* hover-preview video: hidden behind the poster, fades in on hover (desktop only) */
+  .course-cards .course-thumb .thumb-video {
+    display: block;
+    position: absolute; inset: 0;
+    width: 100%; height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity .25s var(--ease);
+    pointer-events: none;
+  }
+  .course-cards .course-card:hover .thumb-video,
+  .course-cards .course-card:focus-within .thumb-video { opacity: 1; }
+
+  /* details live in a panel attached under the card, out of normal flow (no reflow).
+     Same card background + no top border so it reads as one continuous card. */
+  .course-cards .course-card .fc-reveal {
+    position: absolute;
+    left: -1px; right: -1px;
+    top: 100%;
+    background: #fff;
+    border: 1px solid var(--gray-200);
+    border-top: none;
+    border-radius: 0 0 var(--radius) var(--radius);
+    padding: 0 20px;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    box-shadow: 0 18px 30px -12px rgba(6,14,27,.22);
+    pointer-events: none;
+    transition: max-height .2s var(--ease), opacity .15s var(--ease), padding .2s var(--ease);
+  }
+  .course-cards .course-card.is-soon .fc-reveal { background: var(--gray-50); border-style: dashed; border-top: none; }
+  .course-cards .course-card.is-closed .fc-reveal { background: var(--gray-50); }
+
+  /* the close-up: scale from the centre so it grows up, down, left and right.
+     Bottom border + corners drop away so the card merges seamlessly into the panel. */
+  .course-cards .course-card:hover,
+  .course-cards .course-card:focus-within {
+    transform: scale(1.06);
+    z-index: 30;
+    box-shadow: var(--shadow-lg);
+    border-bottom-color: transparent;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .course-cards .course-card:hover .fc-reveal,
+  .course-cards .course-card:focus-within .fc-reveal {
+    max-height: 360px;
+    opacity: 1;
+    padding: 8px 20px 20px;
+    pointer-events: auto;
+  }
+}
 .find-more { text-align: center; margin-top: 28px; }
 .spotlight .find-more { margin-top: 18px; }
 
@@ -701,6 +774,8 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .course-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .course-thumb.placeholder { display: grid; place-items: center; background: linear-gradient(150deg, var(--navy-900), var(--blue-600)); }
 .course-thumb .thumb-label { font-family: var(--font-serif); font-style: italic; font-size: 1.2rem; color: rgba(255,255,255,.85); }
+/* hover-preview video is desktop-only; hidden by default (incl. touch devices) */
+.course-thumb .thumb-video { display: none; }
 /* date + status overlaid on the thumbnail (keeps cards short) */
 .course-thumb .thumb-badge { position: absolute; top: 10px; right: 10px; }
 .course-thumb .thumb-date {
@@ -710,19 +785,6 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   font-size: .74rem; font-weight: 600;
   backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px);
 }
-
-/* Compact course cards (courses list only — keeps homepage cards untouched) */
-.course-section .course-bar { padding: 10px 16px; }
-.course-section .course-card-body { padding: 16px 18px 18px; }
-.course-section .course-card-body h3 { font-size: 1.08rem; line-height: 1.25; }
-.course-section .card-quote {
-  font-size: .92rem; margin: 8px 0 12px; line-height: 1.4;
-  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
-}
-.course-section .card-instructor { margin-bottom: 12px; }
-.course-section .card-instructor .avatar { width: 34px; height: 34px; font-size: .74rem; }
-.course-section .card-tags { margin-bottom: 12px; }
-.course-section .card-meta { margin-bottom: 14px; gap: 4px; font-size: .82rem; }
 
 /* in-card specialty tags */
 .card-tags { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 14px; }

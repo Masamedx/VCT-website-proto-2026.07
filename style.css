@@ -1122,3 +1122,22 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   * { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
   .hero .anim, .reveal { opacity: 1 !important; transform: none !important; }
 }
+
+/* ---------- Cookie consent banner ---------- */
+.cookie-banner {
+  position: fixed; left: 16px; right: 16px; bottom: 16px; z-index: 300;
+  max-width: 720px; margin: 0 auto;
+  background: var(--navy-900); color: #fff;
+  border: 1px solid rgba(255,255,255,.12); border-radius: 14px;
+  box-shadow: var(--shadow-lg);
+  padding: 16px 20px;
+}
+.cookie-inner { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; }
+.cookie-text { margin: 0; flex: 1; min-width: 230px; font-size: .9rem; line-height: 1.5; color: rgba(255,255,255,.85); }
+.cookie-text a { color: var(--blue-400); text-decoration: underline; }
+.cookie-actions { display: flex; gap: 10px; flex: none; }
+@media (max-width: 560px) {
+  .cookie-banner { left: 10px; right: 10px; bottom: 10px; padding: 14px 16px; }
+  .cookie-actions { width: 100%; }
+  .cookie-actions .btn { flex: 1; }
+}

@@ -7,7 +7,7 @@
   <meta name="description" content="The terms of service for registering for and participating in Virtual Clinical Training (VCT) online clinical sessions — registration, payment, recordings, certificates, conduct, and more.">
   <link rel="canonical" href="https://virtualclinicaltraining.example/terms.html">
   <link rel="icon" href="images/brand-logo.png" type="image/png">
-  <meta name="robots" content="index, follow">
+  <meta name="robots" content="noindex, nofollow"><!-- Prototype: keep out of search until the real WordPress site launches -->
 
   <meta property="og:type" content="website">
   <meta property="og:title" content="Terms of Service — Virtual Clinical Training">
@@ -89,7 +89,7 @@
         <p class="eyebrow reveal">Legal</p>
         <h1 class="reveal">Terms of Service</h1>
         <p class="lead reveal">These terms govern your registration for and participation in clinical sessions offered by Virtual Clinical Training (VCT).</p>
-        <p class="legal-updated reveal">Last updated: 7 July 2026</p>
+        <p class="legal-updated reveal">Last updated: 14 July 2026</p>
       </div>
     </section>
 
@@ -139,9 +139,8 @@
         <div class="legal-section reveal" id="s3">
           <h2><span class="num">3.</span> Payment &amp; confirmation</h2>
           <ul>
-            <li>Registration and payment are handled through a Google Form.</li>
-            <li>A digital receipt is issued after payment. Your place is confirmed once payment is received.</li>
-            <li><em>【Accepted payment methods — to be confirmed】</em></li>
+            <li>Registration is handled through a Google Form. Payment is made by bank transfer to our account; for foreign-currency payments, transfer to our Wise account. Please attach your proof of payment to the form.</li>
+            <li>Your place is confirmed once payment is received. A receipt is issued on request.</li>
           </ul>
         </div>
 
@@ -157,8 +156,8 @@
           <h2><span class="num">5.</span> Recordings</h2>
           <ul>
             <li>Sessions may be recorded for educational use.</li>
-            <li>The recording is shared via Google Drive to registered participants <em>【within X days — to be confirmed】</em>.</li>
-            <li>Recordings are for personal use only and may not be copied, redistributed, or shared. <em>【Access duration — to be confirmed】</em></li>
+            <li>The recording is shared via Google Drive to registered participants within 36 hours of the session.</li>
+            <li>The recording remains available for 6 months after the session, after which access is closed. Recordings are for personal use only and may not be copied, redistributed, or shared.</li>
             <li>Unauthorised recording, screenshots, or redistribution of session content is prohibited.</li>
           </ul>
         </div>
@@ -285,5 +284,8 @@
     }, { threshold: 0.08 });
     document.querySelectorAll('.reveal').forEach(el => io.observe(el));
   </script>
+
+  <!-- Cookie consent + Google Analytics (opt-in) -->
+  <script src="cookie-consent.js" defer></script>
 </body>
 </html>

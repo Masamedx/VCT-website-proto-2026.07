@@ -7,7 +7,7 @@
   <meta name="description" content="How Virtual Clinical Training (VCT) collects, uses, stores, and protects your personal data when you register for and attend our online clinical sessions.">
   <link rel="canonical" href="https://virtualclinicaltraining.example/privacy.html">
   <link rel="icon" href="images/brand-logo.png" type="image/png">
-  <meta name="robots" content="index, follow">
+  <meta name="robots" content="noindex, nofollow"><!-- Prototype: keep out of search until the real WordPress site launches -->
 
   <meta property="og:type" content="website">
   <meta property="og:title" content="Privacy Policy — Virtual Clinical Training">
@@ -89,7 +89,7 @@
         <p class="eyebrow reveal">Legal</p>
         <h1 class="reveal">Privacy Policy</h1>
         <p class="lead reveal">How Virtual Clinical Training (VCT) collects, uses, stores, and protects your personal data when you register for and attend our online clinical sessions.</p>
-        <p class="legal-updated reveal">Last updated: 7 July 2026</p>
+        <p class="legal-updated reveal">Last updated: 14 July 2026</p>
       </div>
     </section>
 
@@ -130,10 +130,10 @@
           <h2><span class="num">2.</span> Data we collect</h2>
           <ul>
             <li><strong>Registration details</strong> — your name, email (Gmail) address, and professional information you provide.</li>
-            <li><strong>Payment information</strong> — details submitted to register and pay for a session. <em>【Handled via the payment method — to be confirmed】</em></li>
+            <li><strong>Payment information</strong> — the proof of payment (e.g. a bank-transfer slip) you attach to the registration form. Payment is made by bank transfer to our account, or to our Wise account for foreign-currency payments. We do not collect or store card numbers.</li>
             <li><strong>Participation data</strong> — attendance records, questions asked, and responses to feedback or evaluation forms.</li>
             <li><strong>Session recordings</strong> — recordings of live sessions, which may include your name, voice, or video if you participate.</li>
-            <li><strong>Technical data</strong> — basic information your browser or device sends when you visit this website.</li>
+            <li><strong>Technical &amp; usage data</strong> — basic information your browser or device sends when you visit this website, plus usage data (such as pages viewed) collected through Google Analytics cookies. See §10.</li>
           </ul>
         </div>
 
@@ -150,15 +150,16 @@
           <h2><span class="num">4.</span> How we use your data</h2>
           <ul>
             <li>To process your registration and confirm your place.</li>
-            <li>To deliver the session and share the recording, receipt, and e-certificate.</li>
+            <li>To deliver the session and share the recording, e-certificate, and — on request — a receipt.</li>
             <li>To communicate with you about the session and future offerings you opt into.</li>
             <li>To improve the quality of our sessions and content.</li>
+            <li>To understand how our website is used and improve it, through Google Analytics.</li>
           </ul>
         </div>
 
         <div class="legal-section reveal" id="s5">
           <h2><span class="num">5.</span> Google services &amp; third parties</h2>
-          <p>We use Google services to operate our sessions — Google Meet (delivery), Google Forms (registration and feedback), Google Drive (recording storage and sharing), and Gmail (communication). Your data may be processed on Google's infrastructure. We may also use a payment provider to process payments. <em>【Payment provider — to be confirmed】</em> These providers process data on our behalf and under their own terms and privacy policies.</p>
+          <p>We use Google services to operate our sessions and website — Google Meet (delivery), Google Forms (registration and feedback), Google Drive (recording storage and sharing), Gmail (communication), and Google Analytics (website-usage measurement). Your data may be processed on Google's infrastructure. Payments are made by bank transfer to our account, or via Wise for foreign-currency payments — Wise is an independent provider with its own terms and privacy policy. We do not use a card-payment processor. These providers process data under their own terms and privacy policies.</p>
         </div>
 
         <div class="legal-section reveal" id="s6">
@@ -177,7 +178,13 @@
 
         <div class="legal-section reveal" id="s8">
           <h2><span class="num">8.</span> Data retention</h2>
-          <p>We keep your personal data only as long as necessary for the purposes described here or as required by law. <em>【Specific retention periods — to be confirmed】</em></p>
+          <p>We keep your personal data only as long as necessary for the purposes described here, or as required by law:</p>
+          <ul>
+            <li><strong>Registration &amp; participation data</strong> (name, email, attendance, evaluation responses) — up to 3 years after your most recent session, after which it is deleted or anonymised.</li>
+            <li><strong>Payment proofs, receipts &amp; accounting records</strong> — 7 years, to meet Malaysian tax and record-keeping requirements.</li>
+            <li><strong>Session recordings</strong> — available to registered participants for 6 months after the session, after which access is closed and the recording is archived or deleted.</li>
+            <li><strong>Announcement / mailing contacts</strong> (if you opt in) — until you unsubscribe.</li>
+          </ul>
         </div>
 
         <div class="legal-section reveal" id="s9">
@@ -187,7 +194,7 @@
 
         <div class="legal-section reveal" id="s10">
           <h2><span class="num">10.</span> Cookies &amp; website data</h2>
-          <p>This website is a simple, static site and does not use tracking or advertising cookies. Web fonts are loaded from Google Fonts, which may receive your device's request data. <em>【If analytics or embedded tools are added later, update this section.】</em></p>
+          <p>This website uses <strong>Google Analytics</strong> to understand how visitors use the site — for example, which pages are viewed — so we can improve it. Google Analytics sets cookies and collects usage data such as pages visited, approximate location, and device/browser information. We use this only in aggregate and do not use it to identify you personally. You can block or delete cookies in your browser settings, or install Google's opt-out browser add-on. We do not use advertising cookies. Web fonts are also loaded from Google Fonts, which may receive your device's request data. <em>【A cookie-consent banner is to be added before launch.】</em></p>
         </div>
 
         <div class="legal-section reveal" id="s11">
@@ -277,5 +284,8 @@
     }, { threshold: 0.08 });
     document.querySelectorAll('.reveal').forEach(el => io.observe(el));
   </script>
+
+  <!-- Cookie consent + Google Analytics (opt-in) -->
+  <script src="cookie-consent.js" defer></script>
 </body>
 </html>

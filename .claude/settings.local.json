@@ -23,7 +23,9 @@
       "Bash(git remote *)",
       "Bash(git push *)",
       "Bash(gh --version)",
-      "PowerShell(winget install GitHub.cli)"
+      "PowerShell(winget install GitHub.cli)",
+      "Skill(artifact-design)",
+      "Skill(artifact-design:*)"
     ]
   }
 }

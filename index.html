@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex, nofollow"><!-- Prototype: keep out of search until the real WordPress site launches -->
-  <title>Virtual Clinical Training — Expert-led online dental education | Kuala Lumpur</title>
+  <title>Virtual Clinical Training — Practitioner-led online dental education | Kuala Lumpur</title>
   <meta name="description" content="Virtual Clinical Training delivers live, interactive dental training with international specialists via Google Meet. Affordable, accessible and practical — recordings included.">
   <link rel="canonical" href="https://virtualclinicaltraining.example/">
   <link rel="icon" href="images/brand-logo.png" type="image/png">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Virtual Clinical Training — Expert-led online dental education">
+  <meta property="og:title" content="Virtual Clinical Training — Practitioner-led online dental education">
   <meta property="og:description" content="Live, interactive clinical training with international dental specialists via Google Meet. Recordings included.">
   <meta property="og:image" content="https://virtualclinicaltraining.example/og-image.jpg">
   <meta property="og:url" content="https://virtualclinicaltraining.example/">
@@ -128,6 +128,10 @@
         <a href="courses.html">Courses</a>
         <a href="instructors.html">Instructors</a>
         <a href="about.html">About</a>
+        <form class="nav-search" role="search" action="courses.html" method="get">
+          <svg class="search-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+          <input type="search" name="q" placeholder="Search courses" aria-label="Search courses">
+        </form>
       </nav>
 
       <div class="header-actions">
@@ -157,6 +161,9 @@
       <li><a href="instructors.html">Instructors</a></li>
       <li><a href="about.html">About</a></li>
     </ul>
+    <form class="mobile-search" role="search" action="courses.html" method="get">
+      <input type="search" name="q" placeholder="Search courses" aria-label="Search courses">
+    </form>
     <a href="courses.html" class="btn btn-primary">Explore courses</a>
     <div class="mobile-nav-social">
       <a href="https://www.instagram.com/vct.my/" target="_blank" rel="noopener" class="icon-btn" aria-label="Instagram">
@@ -170,8 +177,8 @@
     <section class="hero" id="hero">
       <!-- Background image slideshow (crossfade). Add more slides as new images are created (hero-3, hero-4, hero-5). -->
       <div class="hero-slideshow" aria-hidden="true">
-        <div class="hero-slide active" style="background-image:url('images/01%20Top-page/hero-1.png')"></div>
-        <div class="hero-slide" style="background-image:url('images/01%20Top-page/hero-2.png')"></div>
+        <div class="hero-slide active" style="background-image:url('images/01%20Top-page/Home-hero-1.png')"></div>
+        <div class="hero-slide" style="background-image:url('images/01%20Top-page/Home-hero-2.png')"></div>
       </div>
       <div class="hero-overlay"></div>
       <div class="hero-shape s1"></div>
@@ -181,7 +188,7 @@
       <div class="container">
         <div class="hero-inner">
           <p class="eyebrow anim d1">Online dental education — Kuala Lumpur, Malaysia</p>
-          <h1 class="anim d2">Expert-led clinical training.<br>From your screen to your chair.</h1>
+          <h1 class="anim d2">Practitioner-led clinical training.<br>From your screen to your chair.</h1>
           <p class="hero-sub anim d3">Virtual Clinical Training delivers live, interactive sessions with international dental specialists via Google Meet — with recordings included so you never miss a thing.</p>
           <p class="hero-tagline anim d3">Affordable. Accessible. Practical.</p>
           <div class="hero-cta anim d4">
@@ -205,12 +212,12 @@
           <!-- Course 1 — currently recruiting -->
           <a href="course-subgingival-debridement.html" class="course-card reveal">
             <div class="course-thumb">
-              <img src="images/03%20Courses/ID260725-thumbnail.png" alt="Subgingival Debridement course thumbnail">
+              <img src="images/02%20Courses/ID260725-thumbnail.png" alt="Subgingival Debridement course thumbnail">
               <!-- Hover-preview video (plays on mouseover, desktop only). Drop the clip at the path below to activate. -->
-              <video class="thumb-video" muted loop playsinline preload="none" poster="images/03%20Courses/ID260725-thumbnail.png">
-                <source src="images/03%20Courses/ID260725-preview.mp4" type="video/mp4">
+              <video class="thumb-video" muted loop playsinline preload="none" poster="images/02%20Courses/ID260725-thumbnail.png">
+                <source src="images/02%20Courses/ID260725-preview.mp4" type="video/mp4">
               </video>
-              <span class="thumb-badge badge badge-green"><span class="dot"></span> Registering</span>
+              <span class="thumb-badge badge badge-green"><span class="dot"></span> Coming soon</span>
             </div>
             <div class="course-card-body">
               <h3>Subgingival Debridement: Beyond Deep Scaling</h3>
@@ -240,7 +247,7 @@
           <a href="courses.html" class="course-card is-soon reveal d1">
             <div class="course-thumb placeholder">
               <span class="thumb-label">Coming soon</span>
-              <span class="thumb-badge badge badge-blue">Planning</span>
+              <span class="thumb-badge badge badge-green"><span class="dot"></span> Coming soon</span>
             </div>
             <div class="course-card-body">
               <h3>Implant Dentistry Essentials</h3>
@@ -269,7 +276,7 @@
           <a href="courses.html" class="course-card is-soon reveal d2">
             <div class="course-thumb placeholder">
               <span class="thumb-label">Coming soon</span>
-              <span class="thumb-badge badge badge-blue">Planning</span>
+              <span class="thumb-badge badge badge-green"><span class="dot"></span> Coming soon</span>
             </div>
             <div class="course-card-body">
               <h3>Endodontics in Daily Practice</h3>
@@ -408,7 +415,7 @@
         <div class="inst-cards">
           <!-- Instructor 1 — Dr. Yeong (confirmed) -->
           <a href="instructors.html" class="inst-card reveal">
-            <img src="images/05%20Instructor/Dr.%20Yeong%20Shue%20Kang.png" alt="Dr. Yeong Shue Kang, periodontist and Virtual Clinical Training instructor" class="inst-photo" width="96" height="96" loading="lazy">
+            <img src="images/03%20Instructor/Dr.%20Yeong%20Shue%20Kang.png" alt="Dr. Yeong Shue Kang, periodontist and Virtual Clinical Training instructor" class="inst-photo" width="96" height="96" loading="lazy">
             <h3>Dr. Yeong Shue Kang</h3>
             <p class="cred">MFDS RCSEd · DrPerio (Universiti Malaya)</p>
             <div class="tags">
@@ -501,7 +508,7 @@
         </div>
         <div class="cta-actions">
           <a href="course-subgingival-debridement.html" class="btn btn-primary">Register now</a>
-          <a href="mailto:virtualclinicaltraining@gmail.com" class="btn btn-ghost">Ask us anything</a>
+          <a href="https://ig.me/m/vct.my" target="_blank" rel="noopener" class="btn btn-ghost">Ask us on Instagram</a>
         </div>
       </div>
     </section>
@@ -530,14 +537,14 @@
           <h4>Connect</h4>
           <ul>
             <li><a href="https://www.instagram.com/vct.my/" target="_blank" rel="noopener">Instagram @vct.my</a></li>
-            <li><a href="mailto:virtualclinicaltraining@gmail.com">Email us</a></li>
+            <li><a href="https://ig.me/m/vct.my" target="_blank" rel="noopener">Send us a DM</a></li>
           </ul>
         </div>
         <div>
           <h4>Legal</h4>
           <ul>
             <li><a href="privacy.html">Privacy policy</a></li>
-            <li><a href="terms.html">Terms of service</a></li>
+            <li><a href="terms.html">Terms &amp; Conditions</a></li>
           </ul>
         </div>
       </div>

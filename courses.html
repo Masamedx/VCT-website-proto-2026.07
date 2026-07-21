@@ -56,7 +56,7 @@
       { "@type": "Question", "name": "Will I receive a recording?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. A full recording is shared via Google Drive with all registered participants after the session." } },
       { "@type": "Question", "name": "Why is a Google account required?", "acceptedAnswer": { "@type": "Answer", "text": "Sessions run on Google Meet and recordings are shared via Google Drive, so a Google (Gmail) account is required to join and access materials. Registration is limited to Gmail accounts." } },
       { "@type": "Question", "name": "What payment methods are accepted?", "acceptedAnswer": { "@type": "Answer", "text": "Payment is made by bank transfer to VCT's account, or to our Wise account for foreign-currency payments. Attach your proof of payment to the registration form." } },
-      { "@type": "Question", "name": "Can I get a refund if I can't attend?", "acceptedAnswer": { "@type": "Answer", "text": "Even if you can't attend live, you'll still receive the recording. Refund terms are noted on each course page. (Refund policy to be confirmed.)" } }
+      { "@type": "Question", "name": "Can I get a refund if I can't attend?", "acceptedAnswer": { "@type": "Answer", "text": "All payments are final and non-refundable. Even if you can't attend live, you'll still receive the recording, so you won't miss the session content." } }
     ]
   }
   </script>
@@ -74,6 +74,10 @@
         <a href="courses.html" aria-current="page">Courses</a>
         <a href="instructors.html">Instructors</a>
         <a href="about.html">About</a>
+        <form class="nav-search" role="search" action="courses.html" method="get">
+          <svg class="search-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+          <input type="search" name="q" placeholder="Search courses" aria-label="Search courses">
+        </form>
       </nav>
       <div class="header-actions">
         <a href="https://www.instagram.com/vct.my/" target="_blank" rel="noopener" class="icon-btn desktop-only" aria-label="Instagram">
@@ -101,6 +105,9 @@
       <li><a href="instructors.html">Instructors</a></li>
       <li><a href="about.html">About</a></li>
     </ul>
+    <form class="mobile-search" role="search" action="courses.html" method="get">
+      <input type="search" name="q" placeholder="Search courses" aria-label="Search courses">
+    </form>
     <a href="courses.html" class="btn btn-primary">Explore courses</a>
     <div class="mobile-nav-social">
       <a href="https://www.instagram.com/vct.my/" target="_blank" rel="noopener" class="icon-btn" aria-label="Instagram">
@@ -112,8 +119,7 @@
   <main>
     <!-- ==================== PAGE HERO ==================== -->
     <section class="page-hero page-hero-sm">
-      <!-- TEMP: placeholder image borrowed from the top page — replace with a dedicated Courses hero later -->
-      <div class="page-hero-bg" style="background-image:url('images/01%20Top-page/hero-2.png')"></div>
+      <div class="page-hero-bg" style="background-image:url('images/02%20Courses/Courses-hero-1.png')"></div>
       <div class="page-hero-overlay"></div>
       <div class="hero-shape s1"></div>
       <div class="hero-shape s2"></div>
@@ -159,21 +165,21 @@
         <!-- ===== OPEN: registration available ===== -->
         <div class="course-section" data-section="open">
           <div class="section-head reveal">
-            <p class="eyebrow">Open for registration</p>
-            <h2 class="section-title">You can still join these</h2>
-            <p class="section-intro">Sessions accepting participants now — whether they haven't started yet, are already running, or are available on-demand.</p>
+            <p class="eyebrow">Upcoming &amp; ongoing</p>
+            <h2 class="section-title">Courses you can join</h2>
+            <p class="section-intro">Sessions that haven't started yet, or are currently running. After a session ends, you can still register to watch the recording for 6 months — see "Past courses" below.</p>
           </div>
 
           <div class="course-cards">
             <!-- OPEN · not started yet (real) -->
             <a href="course-subgingival-debridement.html" class="course-card reveal" data-status="open" data-tags="periodontics,non-surgical">
               <div class="course-thumb">
-                <img src="images/03%20Courses/ID260725-thumbnail.png" alt="Subgingival debridement — periodontal treatment close-up" loading="lazy">
+                <img src="images/02%20Courses/ID260725-thumbnail.png" alt="Subgingival debridement — periodontal treatment close-up" loading="lazy">
                 <!-- Hover-preview video (plays on mouseover, desktop only). Drop the clip at the path below to activate. -->
-                <video class="thumb-video" muted loop playsinline preload="none" poster="images/03%20Courses/ID260725-thumbnail.png">
-                  <source src="images/03%20Courses/ID260725-preview.mp4" type="video/mp4">
+                <video class="thumb-video" muted loop playsinline preload="none" poster="images/02%20Courses/ID260725-thumbnail.png">
+                  <source src="images/02%20Courses/ID260725-preview.mp4" type="video/mp4">
                 </video>
-                <span class="badge badge-green thumb-badge"><span class="dot"></span> Registering</span>
+                <span class="badge badge-green thumb-badge"><span class="dot"></span> Coming soon</span>
               </div>
               <div class="course-card-body">
                 <h3>Subgingival Debridement: Beyond Deep Scaling</h3>
@@ -209,25 +215,6 @@
               </div>
             </a>
 
-            <!-- OPEN · finished but available on-demand (example placeholder) -->
-            <a href="#" class="course-card reveal d2" data-status="open" data-tags="restorative">
-              <div class="course-thumb placeholder">
-                <span class="thumb-label">Restorative</span>
-                <span class="badge badge-blue thumb-badge">On-demand</span>
-              </div>
-              <div class="course-card-body">
-                <h3>Restorative &amp; Aesthetic Dentistry</h3>
-                <div class="card-instructor">
-                  <div class="avatar">VCT</div>
-                  <div><div class="name">Instructor to be announced</div><div class="cred">Restorative &amp; Aesthetic</div></div>
-                </div>
-                <div class="fc-reveal">
-                  <div class="card-meta"><span>Session ended · recording available</span></div>
-                  <div class="card-tags"><span class="tag">Restorative &amp; Aesthetic</span></div>
-                  <span class="card-cta">Get the recording →</span>
-                </div>
-              </div>
-            </a>
           </div>
 
           <!-- Notify band -->
@@ -249,17 +236,37 @@
       <div class="container">
         <div class="course-section" data-section="closed">
           <div class="section-head reveal">
-            <p class="eyebrow">Registration closed</p>
-            <h2 class="section-title">No longer accepting participants</h2>
-            <p class="section-intro">Sessions that have finished, or that filled up before the start date. Recordings remain available to those who registered.</p>
+            <p class="eyebrow">Past courses</p>
+            <h2 class="section-title">Sessions that have ended</h2>
+            <p class="section-intro">All dates for these sessions have finished. For 6 months after a session you can still register to get the recording ("Recording available"); after that, registration closes.</p>
           </div>
 
           <div class="course-cards">
-            <!-- CLOSED · sold out, not yet held (example placeholder) -->
-            <a href="#" class="course-card is-closed reveal" data-status="closed" data-tags="endodontics">
+            <!-- PAST · ended, recording still available to register (within 6 months) -->
+            <a href="#" class="course-card reveal" data-status="open" data-tags="restorative">
+              <div class="course-thumb placeholder">
+                <span class="thumb-label">Restorative</span>
+                <span class="badge badge-blue thumb-badge">Recording available</span>
+              </div>
+              <div class="course-card-body">
+                <h3>Restorative &amp; Aesthetic Dentistry</h3>
+                <div class="card-instructor">
+                  <div class="avatar">VCT</div>
+                  <div><div class="name">Instructor to be announced</div><div class="cred">Restorative &amp; Aesthetic</div></div>
+                </div>
+                <div class="fc-reveal">
+                  <div class="card-meta"><span>Session ended · recording open for 6 months</span></div>
+                  <div class="card-tags"><span class="tag">Restorative &amp; Aesthetic</span></div>
+                  <span class="card-cta">Register to watch →</span>
+                </div>
+              </div>
+            </a>
+
+            <!-- PAST · registration closed (more than 6 months after the session) -->
+            <a href="#" class="course-card is-closed reveal d1" data-status="closed" data-tags="endodontics">
               <div class="course-thumb placeholder">
                 <span class="thumb-label">Endodontics</span>
-                <span class="badge badge-red thumb-badge">Sold out</span>
+                <span class="badge badge-grey thumb-badge">Registration closed</span>
               </div>
               <div class="course-card-body">
                 <h3>Endodontics in Daily Practice</h3>
@@ -268,18 +275,18 @@
                   <div><div class="name">Instructor to be announced</div><div class="cred">Endodontics</div></div>
                 </div>
                 <div class="fc-reveal">
-                  <div class="card-meta"><span>Fully booked — registration closed</span></div>
+                  <div class="card-meta"><span>Session ended · registration closed</span></div>
                   <div class="card-tags"><span class="tag">Endodontics</span></div>
                   <span class="card-cta muted-cta">Registration closed</span>
                 </div>
               </div>
             </a>
 
-            <!-- CLOSED · completed (example placeholder) -->
-            <a href="#" class="course-card is-closed reveal d1" data-status="closed" data-tags="orthodontics">
+            <!-- PAST · registration closed (more than 6 months after the session) -->
+            <a href="#" class="course-card is-closed reveal d2" data-status="closed" data-tags="orthodontics">
               <div class="course-thumb placeholder">
                 <span class="thumb-label">Orthodontics</span>
-                <span class="badge badge-grey thumb-badge">Completed</span>
+                <span class="badge badge-grey thumb-badge">Registration closed</span>
               </div>
               <div class="course-card-body">
                 <h3>Orthodontics &amp; Clear Aligner Basics</h3>
@@ -288,7 +295,7 @@
                   <div><div class="name">Instructor to be announced</div><div class="cred">Orthodontics</div></div>
                 </div>
                 <div class="fc-reveal">
-                  <div class="card-meta"><span>Recording available to participants</span></div>
+                  <div class="card-meta"><span>Session ended · registration closed</span></div>
                   <div class="card-tags"><span class="tag">Orthodontics &amp; Clear Aligner</span></div>
                   <span class="card-cta muted-cta">Registration closed</span>
                 </div>
@@ -326,10 +333,10 @@
           </div>
           <div class="faq-item">
             <button class="faq-q" aria-expanded="false"><span>Can I get a refund if I can't attend?</span><svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
-            <div class="faq-a"><p>Even if you can't attend live, you'll still receive the recording. Refund terms are noted on each course page. <em>(Refund policy to be confirmed.)</em></p></div>
+            <div class="faq-a"><p>All payments are final and non-refundable. Even if you can't attend live, you'll still receive the recording, so you won't miss the session content.</p></div>
           </div>
         </div>
-        <p class="faq-terms">Full terms apply to all sessions. <a href="terms.html">Read our terms of service →</a></p>
+        <p class="faq-terms">Full terms apply to all sessions. <a href="terms.html">Read our terms &amp; conditions →</a></p>
       </div>
     </section>
   </main>
@@ -357,14 +364,14 @@
           <h4>Connect</h4>
           <ul>
             <li><a href="https://www.instagram.com/vct.my/" target="_blank" rel="noopener">Instagram @vct.my</a></li>
-            <li><a href="mailto:virtualclinicaltraining@gmail.com">Email us</a></li>
+            <li><a href="https://ig.me/m/vct.my" target="_blank" rel="noopener">Send us a DM</a></li>
           </ul>
         </div>
         <div>
           <h4>Legal</h4>
           <ul>
             <li><a href="privacy.html">Privacy policy</a></li>
-            <li><a href="terms.html">Terms of service</a></li>
+            <li><a href="terms.html">Terms &amp; Conditions</a></li>
           </ul>
         </div>
       </div>
